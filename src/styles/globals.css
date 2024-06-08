@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 78, 146;
+    --background-end-rgb: 0, 4, 40;
+} */
+
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+} */
+
+
+
+@layer base {
+    .wrapper {
+        @apply min-h-screen overflow-x-clip;
+    }
+    main {
+        @apply py-12;
+    }
+    main {
+        @apply flex-[1_1_auto];
+
+        > * {
+            @apply min-w-0;
+        }
+    }
+
+    .wrapper {
+        @apply flex flex-col leading-snug;
+    }
+}
+
+@layer components {
+    .container {
+        @apply mx-auto max-w-[1232px] px-4;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
